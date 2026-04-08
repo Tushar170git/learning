@@ -27,6 +27,37 @@
 // }
 // greet(); 
 
+
+// create a fun that gives us the average of 3 numbers :-
+
+function numb2 ( ... num) { 
+// console.log(num); [5,10]
+let summ2=0;
+for(let n of num) {     // find average of number 
+summ2= summ2 + n /num.length; // 0+5,0+10
+}
+console. log (`the average of ${num} is ${summ2}`); // ${sum} auttomatically convert array into string 5,10,15
+
+}
+numb2(5,10,15,20); 
+
+// create a function that prints the multiplication table  of a number :-
+// function tables (h) {
+// for (let i=h;i<=h*10;i=i+h) {
+//   console.log(i); // 2 ,4 ...
+// }
+// }
+// tables(2);
+
+function table(n) {
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${n} x ${i} = ${n * i}`);
+    }
+}
+
+table(2);
+
+
 // // now see same thing with function experssion :-
 //   greet1(); //show error with function expresssion if we call it 
 // // before it created but in normal fuction it will work and thats the differnce betwwen normal and fuction expresiion...
@@ -239,45 +270,3 @@ function outer1(){
 
 const x2 = outer1(); // x2= 
 x2();
-// create a fun that gives us the average of 3 numbers :-
-
-function numb2 ( ... num) { 
-// console.log(num); [5,10]
-let summ2=0;
-for(let n of num) {     // find average of number 
-summ2= summ2 + n /num.length; // 0+5,0+10
-}
-console. log (`the average of ${num} is ${summ2}`); // ${sum} auttomatically convert array into string 5,10,15
-
-}
-numb2(5,10,15,20); 
-
-// create a function that prints the multiplication table  of a number :-
-// function tables (h) {
-// for (let i=h;i<=h*10;i=i+h) {
-//   console.log(i); // 2 ,4 ...
-// }
-// }
-// tables(2);
-
-
-function table(n) {
-    for (let i = 1; i <= 10; i++) {
-        console.log(`${n} x ${i} = ${n * i}`);
-    }
-}
-
-table(2);
-
-
-
-
-
-
-
-
-
-
-
-
- 
