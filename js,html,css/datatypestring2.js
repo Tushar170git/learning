@@ -35,12 +35,11 @@
 // console.log(string.includes("kutta"));
 
 // // now see repeat string below :👇
-// let repeatstring = "Hi ";
-// console.log(repeatstring.repeat(3));
+    // let repeatstring = "Hi ";
+     // console.log(repeatstring.repeat(3));
 // // multiline string
-// let multiline = `Hell Welcome
-// to JavaScript
-// `; console.log(multiline);
+   // let multiline = `Hell Welcome to JavaScript`;
+   //  console.log(multiline);
 // //comparing string= if both string value same it will output true else false 
 // let app = "apple";
 // let ban = "apple";
