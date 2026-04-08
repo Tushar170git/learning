@@ -267,6 +267,5 @@ function outer1(){
     console.log("Inner running");
   }
 }
-
 const x2 = outer1(); // x2= 
 x2();
