@@ -253,19 +253,49 @@ callFun(greet);
 // first class function  =it is not type of fun it is feature of js where function can be trated like variables 
 // means we can store function in variable, pass functions as a arguments , return function from another function
 // see returns functions:-
-function outer () {
-  return function () {
-    console.log(" written inside return function ");
-  }
+// function outer () {
+//   return function () {
+//     console.log(" written inside return function ");
+//   }
+// }
+//  const x= outer();   // x store= function() { console.log("written ....")}
+// x();
+// // another example :-
+// function outer1(){
+//   console.log("Outer running");
+//   return function(){
+//     console.log("Inner running");
+//   }
+// }
+// const x2 = outer1(); // x2= 
+// x2();
+
+// basic calculator 
+function calculator(a, operator, b) {
+
+    if (operator === "+") {
+        return `${a} + ${b} = ${a + b}`;
+    } 
+    else if (operator === "-") {
+        return `${a} - ${b} = ${a - b}`;
+    } 
+    else if (operator === "*") {
+        return `${a} * ${b} = ${a * b}`;
+    } 
+    else if (operator === "/") {
+        if (b === 0) {
+            return "Cannot divide by 0";
+        }
+        return `${a} / ${b} = ${a / b}`;
+    } 
+    else {
+        return "Invalid operator";
+    }
 }
- const x= outer();   // x store= function() { console.log("written ....")}
-x();
-// another example :-
-function outer1(){
-  console.log("Outer running");
-  return function(){
-    console.log("Inner running");
-  }
-}
-const x2 = outer1(); // x2= 
-x2();
+
+// Test
+console.log(calculator(10,  "+",50));
+console.log(calculator(10, "*",50));
+console.log(calculator(10,  "/",2));
+
+
