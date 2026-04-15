@@ -243,7 +243,7 @@ console.log("i am callfun u called callfun as an argument greet function")
   console.log("hello 2");
   console.log(fn);
 }
-callFun(greet);
+callFun(greet); // fn mai greet fun pass kiya means fn = grret fun if we fn(); means fn= greet(); we called g
 // setTimeout = run a function AFTER some time ex with arrow fun:-
 // setTimeout(() => {
 //   console.log("Hello");
@@ -267,35 +267,35 @@ callFun(greet);
 //     console.log("Inner running");
 //   }
 // }
-// const x2 = outer1(); // x2= 
+// const x2 = outer1(); // x2= function(){console.log("i am inner")}
 // x2();
 
 // basic calculator 
-function calculator(a, operator, b) {
+// function calculator(a, operator, b) {
 
-    if (operator === "+") {
-        return `${a} + ${b} = ${a + b}`;
-    } 
-    else if (operator === "-") {
-        return `${a} - ${b} = ${a - b}`;
-    } 
-    else if (operator === "*") {
-        return `${a} * ${b} = ${a * b}`;
-    } 
-    else if (operator === "/") {
-        if (b === 0) {
-            return "Cannot divide by 0";
-        }
-        return `${a} / ${b} = ${a / b}`;
-    } 
-    else {
-        return "Invalid operator";
-    }
-}
+//     if (operator === "+") {
+//         return `${a} + ${b} = ${a + b}`;
+//     } 
+//     else if (operator === "-") {
+//         return `${a} - ${b} = ${a - b}`;
+//     } 
+//     else if (operator === "*") {
+//         return `${a} * ${b} = ${a * b}`;
+//     } 
+//     else if (operator === "/") {
+//         if (b === 0) {
+//             return "Cannot divide by 0";
+//         }
+//         return `${a} / ${b} = ${a / b}`;
+//     } 
+//     else {
+//         return "Invalid operator";
+//     }
+// }
 
-// Test
-console.log(calculator(10,  "+",50));
-console.log(calculator(10, "*",50));
-console.log(calculator(10,  "/",2));
+// // Test
+// console.log(calculator(10,  "+",50));
+// console.log(calculator(10, "*",50));
+// console.log(calculator(10,  "/",2)); 
 
 
