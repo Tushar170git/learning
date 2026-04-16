@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>loop in javascript</title>
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  background: #1e3a8a;
+  color: aqua;
+  transition: all 0.3s ease;
+}
+header:hover {
+  /* background-color:aqua ; */
+  color: red;
+  /* transform: scale(0.8); */
+  /* letter-spacing: 2px; */
+}
+
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  background: #1e293b;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all;
+}
+.card:hover{
+    color: red;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background: #22c55e;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.output {
+  background: black;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 120px;
+}
+
+.code {
+  color: #38bdf8;
+}
+</style>
+</head>
+
+<body>
+
+<header>🔥WHAT IS LOOP IN JAVASCRIPT?  🔥</header>
+<p>
+A loop is used when you want to <b>repeat something again and again.</b><br><br>
+
+👉 Instead of writing:<br>
+console.log("Hello");<br>
+console.log("Hello");<br>
+console.log("Hello");<br><br>
+
+👉 You use a loop:<br><br>
+
+for(let i = 0; i &lt; 3; i++) {<br>
+&nbsp;&nbsp;console.log("Hello");<br>
+}<br><br>
+
+✔ Same work<br>
+✔ Less code<br>
+✔ More powerful<br><br>
+
+<hr>
+
+<b>🧠 Why loops are important?</b><br><br>
+
+Because in real life programming:<br><br>
+
+• You deal with <b>arrays (lists)</b><br>
+• You process <b>data again and again</b><br>
+• You repeat tasks like:<br><br>
+
+&nbsp;&nbsp;• printing numbers<br>
+&nbsp;&nbsp;• checking conditions<br>
+&nbsp;&nbsp;• updating values<br><br>
+
+<hr>
+
+<b>🔥 Types of Loops in JavaScript</b><br><br>
+
+There are mainly <b>5 loops</b>:<br><br>
+
+1. for loop<br>
+2. while loop<br>
+3. do...while loop<br>
+4. for...of loop<br>
+5. for...in loop<br><br>
+
+Plus:<br>
+• break<br>
+• continue<br>
+• Infinite loops<br><br>
+
+<hr>
+
+<b>1️⃣ FOR LOOP (Most Important)</b><br><br>
+
+Syntax:<br>
+for(initialization; condition; update) { }<br><br>
+
+Example:<br>
+for(let i = 0; i &lt; 5; i++) {<br>
+&nbsp;&nbsp;console.log(i);<br>
+}<br><br>
+
+Output:<br>
+0 1 2 3 4<br><br>
+
+Use:<br>
+👉 When you know number of iterations<br><br>
+
+<hr>
+
+<b>2️⃣ WHILE LOOP</b><br><br>
+
+while(condition) { }<br><br>
+
+Example:<br>
+let i = 0;<br>
+while(i &lt; 5) {<br>
+&nbsp;&nbsp;console.log(i);<br>
+&nbsp;&nbsp;i++;<br>
+}<br><br>
+
+Use:<br>
+👉 When count is unknown<br><br>
+
+<hr>
+
+<b>3️⃣ DO...WHILE LOOP</b><br><br>
+
+do { } while(condition);<br><br>
+
+👉 Runs at least once<br><br>
+
+<hr>
+
+<b>4️⃣ FOR...OF LOOP</b><br><br>
+
+👉 Used for arrays & strings<br><br>
+
+Example:<br>
+let arr = [10, 20, 30];<br>
+for(let value of arr) {<br>
+&nbsp;&nbsp;console.log(value);<br>
+}<br><br>
+
+<hr>
+
+<b>5️⃣ FOR...IN LOOP</b><br><br>
+
+👉 Used for objects<br><br>
+
+Example:<br>
+let obj = { name: "Tushar", age: 21 };<br>
+for(let key in obj) {<br>
+&nbsp;&nbsp;console.log(key, obj[key]);<br>
+}<br><br>
+
+<hr>
+
+<b>⚠️ Important Concepts</b><br><br>
+
+<b>break:</b> stops loop<br>
+<b>continue:</b> skips iteration<br>
+<b>Infinite loop:</b> never stops (danger)<br><br>
+
+<hr>
+
+<b>🧠 Loop Flow</b><br>
+Start → Condition → Run → Update → Repeat<br><br>
+
+<hr>
+
+<b>🧪 Comparison</b><br><br>
+
+for → fixed times<br>
+while → unknown times<br>
+do-while → at least once<br>
+for...of → arrays/strings<br>
+for...in → objects<br><br>
+
+<hr>
+
+<b>🔥 Real Website Example</b><br><br>
+
+let items = ["Apple", "Banana", "Mango"];<br>
+let ul = document.getElementById("list");<br><br>
+
+for(let item of items) {<br>
+&nbsp;&nbsp;let li = document.createElement("li");<br>
+&nbsp;&nbsp;li.innerText = item;<br>
+&nbsp;&nbsp;ul.appendChild(li);<br>
+}<br><br>
+
+👉 This is how loops are used in real websites
+</p>
+<div class="container">
+
+<!-- FOR LOOP -->
+<div class="card">
+<h2>For Loop</h2>
+<button onclick="forLoop()">Learn For Loop</button>
+<div id="forBox" class="output"></div>
+</div>
+
+<!-- WHILE LOOP -->
+<div class="card">
+<h2>While Loop</h2>
+<button onclick="whileLoop()">Learn While Loop</button>
+<div id="whileBox" class="output"></div>
+</div>
+
+<!-- DO WHILE -->
+<div class="card">
+<h2>Do While Loop</h2>
+<button onclick="doLoop()">Learn Do While</button>
+<div id="doBox" class="output"></div>
+</div>
+
+<!-- FOR OF -->
+<div class="card">
+<h2>For Of Loop</h2>
+<button onclick="forOfLoop()">Learn For Of</button>
+<div id="forOfBox" class="output"></div>
+</div>
+
+<!-- FOR IN -->
+<div class="card">
+<h2>For In Loop</h2>
+<button onclick="forInLoop()">Learn For In</button>
+<div id="forInBox" class="output"></div>
+</div>
+
+<!-- FOREACH -->
+<div class="card">
+<h2>forEach Loop</h2>
+<button onclick="forEachLoop()">Learn forEach</button>
+<div id="forEachBox" class="output"></div>
+</div>
+
+</div>
+
+<script>
+
+// FOR LOOP
+function forLoop() {
+  let box = document.getElementById("forBox");
+  let i = 1;
+
+  box.innerHTML = `
+  <div class="code">for (let i = 1; i <= 5; i++)</div><br>
+  Example: Print numbers 1 to 5<br><br>
+  Real Use: Showing product list (Amazon)<br><br>
+  Steps:<br>
+  `;
+
+  let interval = setInterval(() => {
+    if (i <= 5) {
+      box.innerHTML += "Number: " + i + "<br>";
+      i++;
+    } else {
+      box.innerHTML += "<br>✅ Finished";
+      clearInterval(interval);
+    }
+  }, 600);
+}
+
+// WHILE LOOP
+function whileLoop() {
+  let box = document.getElementById("whileBox");
+  let i = 1;
+
+  box.innerHTML = `
+  <div class="code">while (i <= 5)</div><br>
+  Example: Count numbers<br><br>
+  Real Use: Login system (until correct password)<br><br>
+  Steps:<br>
+  `;
+
+  let interval = setInterval(() => {
+    if (i <= 5) {
+      box.innerHTML += "i = " + i + "<br>";
+      i++;
+    } else {
+      box.innerHTML += "<br>✅ Stopped";
+      clearInterval(interval);
+    }
+  }, 600);
+}
+
+// DO WHILE
+function doLoop() {
+  let box = document.getElementById("doBox");
+  let i = 1;
+
+  box.innerHTML = `
+  <div class="code">do { } while (i <= 5)</div><br>
+  Example: Runs at least once<br><br>
+  Real Use: Show popup at least once<br><br>
+  Steps:<br>
+  `;
+
+  let interval = setInterval(() => {
+    if (i <= 5) {
+      box.innerHTML += "Run: " + i + "<br>";
+      i++;
+    } else {
+      box.innerHTML += "<br>✅ Done";
+      clearInterval(interval);
+    }
+  }, 600);
+}
+
+// FOR OF
+function forOfLoop() {
+  let box = document.getElementById("forOfBox");
+  let arr = ["Apple", "Banana", "Mango"];
+  let i = 0;
+
+  box.innerHTML = `
+  <div class="code">for (let value of array)</div><br>
+  Example: Loop array values<br><br>
+  Real Use: Show Instagram posts<br><br>
+  Steps:<br>
+  `;
+
+  let interval = setInterval(() => {
+    if (i < arr.length) {
+      box.innerHTML += arr[i] + "<br>";
+      i++;
+    } else {
+      box.innerHTML += "<br>✅ Finished";
+      clearInterval(interval);
+    }
+  }, 600);
+}
+
+// FOR IN
+function forInLoop() {
+  let box = document.getElementById("forInBox");
+  let obj = {name:"Tushar", age:22};
+  let keys = Object.keys(obj);
+  let i = 0;
+
+  box.innerHTML = `
+  <div class="code">for (let key in object)</div><br>
+  Example: Loop object<br><br>
+  Real Use: Form data handling<br><br>
+  Steps:<br>
+  `;
+
+  let interval = setInterval(() => {
+    if (i < keys.length) {
+      let key = keys[i];
+      box.innerHTML += key + ": " + obj[key] + "<br>";
+      i++;
+    } else {
+      box.innerHTML += "<br>✅ Done";
+      clearInterval(interval);
+    }
+  }, 600);
+}
+
+// FOREACH
+function forEachLoop() {
+  let box = document.getElementById("forEachBox");
+  let arr = [10,20,30];
+  let i = 0;
+
+  box.innerHTML = `
+  <div class="code">array.forEach()</div><br>
+  Example: Loop array<br><br>
+  Real Use: Data rendering in UI<br><br>
+  Steps:<br>
+  `;
+
+  let interval = setInterval(() => {
+    if (i < arr.length) {
+      box.innerHTML += arr[i] + "<br>";
+      i++;
+    } else {
+      box.innerHTML += "<br>✅ Finished";
+      clearInterval(interval);
+    }
+  }, 600);
+}
+
+</script>
+
+</body>
+</html>

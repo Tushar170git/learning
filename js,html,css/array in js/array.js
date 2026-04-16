@@ -66,3 +66,25 @@ console.log(ae);
 // array reference 
 console.log([1]===[1]);
 console.log(1===1);
+// constant array :- const prevents ressignment , not mutation 
+const arr5 = [1,2,5,8]; // const lock only references (adress ) and not value , its mean refernce adress is locked 
+// arr5=[10,2,5]; // error because here i am trying to change reference 
+// i can modify value inside array but not varible which i give to array name 
+arr5[0]= 500; arr.push(200); arr.unshift(2002);
+console.log(arr5);
+ 
+// nested array :- array of arrays or we can called it multidimesion array
+let arr6 = [
+    [2,4],
+[5,6],
+[8,9]
+];
+console.log(arr6);
+// arr6[0][0][1]=500;
+arr6[0]= [5,4]; // in this way we can change 0 index both value 
+console.log(arr6);
+arr6[1][1]=100;
+console.log(arr6);
+
+
+

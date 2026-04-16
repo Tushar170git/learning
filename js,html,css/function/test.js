@@ -27,3 +27,4 @@ users.sort((a,b)=> a.age - b.age);
 console.log(users);
 users.sort((a,b)=>a.name - b.name );
 console.log(users);
+

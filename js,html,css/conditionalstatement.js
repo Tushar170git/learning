@@ -24,7 +24,7 @@ for(let i = 0; i < password.length; i++){  // password length is not sring index
 
     let ch = password[i];
 // console.log(ch);
-    if(ch >= 'A' && ch <= 'Z'){
+    if(ch >= 'A' && ch <= 'Z'){  // Ascii value 
         hasUpper = true;
     }
     else if(ch >= 'a' && ch <= 'z'){
