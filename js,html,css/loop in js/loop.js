@@ -70,8 +70,46 @@ for (let i= fruits.length-1; i>=0;i--) {
 } 
 console.log("nested loops with nested array"); 
 // nested loop with nested array 
+ let heroes =[["ironman","spiderman","thor"],["suparman","wonder women","flash"]];
+//  console.log(heroes.length);
+// console.log(heroes);  
+ for (let i =0;i<heroes.length;i++) { // to print individual array we have to use nested loop
+    console.log(i,heroes[i]);
+    for (let j=0;j<heroes[i].length;j++) {
+        console.log(heroes[i][j]);
+    }
 
- 
+ }
+console.log("nested for of loop");
+ // for of loop  
+ // lets see nested of for of loop :-
+ let heroes2 = [ ["ironman", "spiderman", "thor"], ["superman", "wonder woman", "flash"]];
+
+for(list of heroes2) {
+    // console.log(`${list}`); // ${} convert array into string 
+    console.log(list);
+for(hero of list) {
+console. log(hero); 
+}
+}
+// note :-execution done line by line in this order
+// list = ["ironman", "spiderman", "thor"]
+// print list
+// inner loop chalega:
+// ironman
+// spiderman
+// thor
+// next outer iteration:
+// list = ["superman", "wonder woman", "flash"]
+// print list
+// inner loop:
+// superman
+// wonder woman
+// flash
+
+
+
+
 
 
 
