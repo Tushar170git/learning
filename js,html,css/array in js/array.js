@@ -84,7 +84,8 @@ console.log(arr6);
 arr6[0]= [5,4]; // in this way we can change 0 index both value 
 console.log(arr6);
 arr6[1][1]=100;
-console.log(arr6);
+console.log(arr6);  
+//
 
 
 
