@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete HTML Tutorial">
+    <meta name="keywords" content="HTML, tutorial, web development">
+    <meta name="author" content="Tushar">
+    <title>Ultimate HTML Mastery</title>
+</head>
+
+<body style="margin:0; font-family:Arial; background:#0f172a; color:white;">
+
+<!-- HEADER -->
+<header style="background:#1e3a8a; padding:20px; text-align:center;">
+    <h1>🚀 Ultimate HTML Mastery website built using html only with some basic inline css only  </h1>
+    <p>From Zero to Advanced (ONLY HTML)</p>
+</header>
+
+<!-- NAV -->
+<nav style="background:#111827; padding:10px; text-align:center;">
+    <a href="#basics" style="color:cyan; margin:10px;">Basics</a>
+    <a href="#text" style="color:cyan; margin:10px;">Text</a>
+    <a href="#list" style="color:cyan; margin:10px;">Lists</a>
+    <a href="#table" style="color:cyan; margin:10px;">Tables</a>
+    <a href="#forms" style="color:cyan; margin:10px;">Forms</a>
+    <a href="#media" style="color:cyan; margin:10px;">Media</a>
+    <a href="#advanced" style="color:cyan; margin:10px;">Advanced</a>
+</nav>
+
+<!-- BASICS -->
+<section id="basics" style="padding:20px;">
+<h2>📌 HTML Basics</h2>
+<p>HTML = HyperText Markup Language</p>
+
+<h3>Basic Structure</h3>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;&lt;/head&gt;
+&lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<h3>Comments</h3>
+<p><!-- This is a comment --></p>
+
+<h3>Attributes</h3>
+<p title="tooltip">Hover me</p>
+
+</section>
+
+<!-- TEXT -->
+<section id="text" style="padding:20px;">
+<h2>📝 Text & Formatting</h2>
+
+<h1>Heading 1</h1>
+<h6>Heading 6</h6>
+
+<p>This is paragraph</p>
+
+<b>Bold</b><br>
+<strong>Strong</strong><br>
+<i>Italic</i><br>
+<em>Emphasis</em><br>
+<u>Underline</u><br>
+<mark>Highlight</mark><br>
+<small>Small</small><br>
+<del>Deleted</del><br>
+<ins>Inserted</ins><br>
+
+<blockquote>This is blockquote</blockquote>
+
+<code>console.log("Hello")</code>
+
+<pre>
+Preformatted text
+Line stays same
+</pre>
+
+</section>
+
+<!-- LIST -->
+<section id="list" style="padding:20px;">
+<h2>📋 Lists</h2>
+
+<h3>Ordered</h3>
+<ol type="A">
+<li>One</li>
+<li>Two</li>
+</ol>
+
+<h3>Unordered</h3>
+<ul>
+<li>Item</li>
+<li>Item</li>
+</ul>
+
+<h3>Description List</h3>
+<dl>
+<dt>HTML</dt>
+<dd>Markup Language</dd>
+</dl>
+
+</section>
+
+<!-- TABLE -->
+<section id="table" style="padding:20px;">
+<h2>📊 Tables</h2>
+
+<table border="1" cellpadding="10">
+<thead>
+<tr>
+<th>Name</th>
+<th>Age</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Tushar</td>
+<td>21</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<td colspan="2">End</td>
+</tr>
+</tfoot>
+</table>
+
+</section>
+
+<!-- FORMS -->
+<section id="forms" style="padding:20px;">
+<h2>📝 Forms (FULL)</h2>
+
+<form>
+
+<label>Name:</label>
+<input type="text" required><br><br>
+
+<label>Email:</label>
+<input type="email"><br><br>
+
+<label>Password:</label>
+<input type="password"><br><br>
+
+<label>Number:</label>
+<input type="number"><br><br>
+
+<label>Date:</label>
+<input type="date"><br><br>
+
+<label>Range:</label>
+<input type="range"><br><br>
+
+<label>Color:</label>
+<input type="color"><br><br>
+
+<label>File:</label>
+<input type="file"><br><br>
+
+<label>Gender:</label>
+<input type="radio" name="g"> Male
+<input type="radio" name="g"> Female<br><br>
+
+<label>Skills:</label>
+<input type="checkbox"> HTML
+<input type="checkbox"> CSS<br><br>
+
+<label>Dropdown:</label>
+<select>
+<option>Option 1</option>
+<option>Option 2</option>
+</select><br><br>
+
+<label>Textarea:</label><br>
+<textarea rows="4"></textarea><br><br>
+
+<input type="submit">
+<input type="reset">
+
+</form>
+
+</section>
+
+<!-- MEDIA -->
+<section id="media" style="padding:20px;">
+<h2>🎥 Media</h2>
+
+<img src="https://via.placeholder.com/200">
+
+<video controls width="300">
+<source src="sample.mp4">
+</video>
+
+<audio controls>
+<source src="sample.mp3">
+</audio>
+
+<iframe width="300" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+
+</section>
+
+<!-- ADVANCED -->
+<section id="advanced" style="padding:20px;">
+<h2>⚡ Advanced HTML</h2>
+
+<h3>Semantic Tags</h3>
+<article>Article</article>
+<section>Section</section>
+<aside>Sidebar</aside>
+<footer>Footer</footer>
+
+<h3>Details & Summary</h3>
+<details>
+<summary>Click me</summary>
+<p>Hidden content</p>
+</details>
+
+<h3>Progress</h3>
+<progress value="70" max="100"></progress>
+
+<h3>Meter</h3>
+<meter value="0.6"></meter>
+
+<h3>Figure</h3>
+<figure>
+<img src="https://via.placeholder.com/100">
+<figcaption>Image Caption</figcaption>
+</figure>
+
+<h3>Abbreviation</h3>
+<abbr title="HyperText Markup Language">HTML</abbr>
+
+<h3>Keyboard Input</h3>
+<kbd>Ctrl + C</kbd>
+
+<h3>Output</h3>
+<output>Result</output>
+
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#1e3a8a; padding:20px; text-align:center;">
+<p>🔥 Full HTML Mastery | Made by Tushar </p>
+<p> This is basic website made using HTML only with some basic inline css only (no JS,NO external css file use)</p>
+<p> It is a static website designed solely to demonstrate structure and layout, and does not include any dynamic functionality or interactive features.</p>
+</footer>
+
+</body>
+</html>
