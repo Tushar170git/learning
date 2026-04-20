@@ -33,31 +33,31 @@
 //  for (let i =0;i<heroes.lenght;i++) {
 //     console.log(i,heroes[i]);
 //  }
-// let row =" ";
-// console.log("hello");
-// let arr = [
-//   [1, 2],
-//   [3, 4]
-// ];
-
-// for (let i = 0; i < arr.length; i++) {
-//   let row = "";
-
-//   for (let j = 0; j < arr[i].length; j++) {
-//     row = arr[i][j] + " ";
-//   }
-
-//   console.log(row);
-// }
-
+let row =" ";
+console.log("hello");
 let arr = [
   [1, 2],
-  [3, 4],
-  [5, 6]
+  [3, 4]
 ];
 
 for (let i = 0; i < arr.length; i++) {
+  let row = "";
+
   for (let j = 0; j < arr[i].length; j++) {
-    console.log(arr[i][j]);
+    row  = arr[i][j] + " ";
   }
+
+  console.log(row);
 }
+
+// let arr = [
+//   [1, 2],
+//   [3, 4],
+//   [5, 6]
+// ];
+
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 0; j < arr[i].length; j++) {
+//     console.log(arr[i][j]);
+//   }
+// }

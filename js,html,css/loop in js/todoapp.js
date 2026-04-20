@@ -22,7 +22,7 @@ while (true) {
 
     } else if (req == "add") {
 
-        let task = prompt("please enter the task you want to add");
+        let task = prompt("please enter the task you want to add"); // 
         todo.push(task);
         console.log("task added");
 
@@ -33,7 +33,7 @@ while (true) {
         } else {
             let idx = prompt("please enter the task index you want to delete");
 
-            if (idx >= 0 && idx < todo.length) {
+            if (idx >= 0 && idx < todo.length) {   //
                 todo.splice(idx, 1);
                 console.log("task deleted");
             } else {
