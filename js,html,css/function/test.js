@@ -33,22 +33,22 @@
 //  for (let i =0;i<heroes.lenght;i++) {
 //     console.log(i,heroes[i]);
 //  }
-let row =" ";
-console.log("hello");
-let arr = [
-  [1, 2],
-  [3, 4]
-];
+// let row =" ";
+// console.log("hello");
+// let arr = [
+//   [1, 2],
+//   [3, 4]
+// ];
 
-for (let i = 0; i < arr.length; i++) {
-  let row = "";
+// for (let i = 0; i < arr.length; i++) {
+//   let row = "";
 
-  for (let j = 0; j < arr[i].length; j++) {
-    row  = arr[i][j] + " ";
-  }
+//   for (let j = 0; j < arr[i].length; j++) {
+//     row  = arr[i][j] + " ";
+//   }
 
-  console.log(row);
-}
+//   console.log(row);
+// }
 
 // let arr = [
 //   [1, 2],
@@ -61,3 +61,30 @@ for (let i = 0; i < arr.length; i++) {
 //     console.log(arr[i][j]);
 //   }
 // }
+
+// function add (a,b) {
+  
+// return a+b;  
+// }
+//  let b = add(5,10);
+//  console.log(b);
+
+//  const add2 = (a,b) => a+b;
+//  let x= add2(50,10)
+//  console.log(x);
+// const a= {
+//   b:10,
+//   x:function(){
+//     console.log(this.b);
+//   }
+// };
+// a.x();
+// const user = {
+//   b:"ewhjw",
+//   greet: function() {
+//     console.log(this.b);
+//   }
+// };
+// user.greet();
+// let a = 10;
+// console.log(a);

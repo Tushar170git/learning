@@ -84,3 +84,37 @@ console.log("Max:", max);
 console.log("Min:", min);
 
 
+// for (let i=1;i<=4;i++) {
+//     for (let j=1;j<=5;j++) {
+//         console.log("*");
+//     }
+// }
+// print 
+// *****
+// *****
+// *****
+// *****
+for (let i = 1; i <= 4; i++) {   // rows
+    let row = "";
+
+    for (let j = 1; j <= 5; j++) {  // columns
+        row += "*";
+    }
+    console.log(row);
+}
+console.log(" --------");
+// print right triangle 
+// *
+// **
+// ***
+// ****
+for (let i = 1; i <= 4; i++) {
+    let row = "";
+
+    for (let j = 1; j <= i; j++) {
+        row += "*";
+    }
+
+    console.log(row);
+}
+console.log( "" +"*");

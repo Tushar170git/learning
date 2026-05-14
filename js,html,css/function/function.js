@@ -128,14 +128,17 @@ table(2);
 // console.log(user.name);// object kai andar key 
 // console.log(user.greet);
 // // if we store function inside variable :-
-// const obj = {
-//   name: "Tushar",
-//   show: function(){
-//     console.log(this.name);
-//   }
-// };
-// const fn = obj.show;
-// // fn();    it will show undefined because this keyword only work when function is caleed with object only here fn() called alone 
+console.log("when function is called when it is store inside variable ");
+const obj = {
+  name: "Tushar",
+  show: function(){
+    console.log(this.name);
+  }
+};
+// console.log(obj.name); 
+// console.log(obj.show);
+const fn = obj.show; 
+fn();       //   it will show undefined because this keyword only work when function is caleed with object only here fn() called alone 
 
 // const obj = {
 //   name: "Tushar",
